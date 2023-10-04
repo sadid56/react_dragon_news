@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NewsCard = ({ news }) => {
   console.log(news);
-  const { title, thumbnail_url, details, image_url, author,total_view, _id } = news;
+  const { title, details, image_url, author,total_view, _id } = news;
   return (
     <div className="mb-5">
       <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
@@ -16,10 +16,6 @@ const NewsCard = ({ news }) => {
               <h5 class="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                 {author.name}
               </h5>
-              <div className="flex items-center gap-2">
-                <h2>a</h2>
-                <h3>b</h3>
-              </div>
             </div>
             <p class="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
               {author.published_date}
